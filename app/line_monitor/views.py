@@ -48,7 +48,7 @@ def index(request):
         )
     )
 
-    graph_div = fig.to_html(full_html=False, include_plotlyjs=False)
+    graph_div = fig.to_html()
     context = {'graph_div': graph_div}
 
     return render(request, "index.html", context=context)
