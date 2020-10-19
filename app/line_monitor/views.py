@@ -48,7 +48,7 @@ def index(request):
         )
     )
 
-    graph_div = fig.to_html()
-    context = {'graph_div': graph_div}
+    graph_page = fig.to_html()
+    context = {'graph_page': graph_page}
 
     return render(request, "index.html", context=context)
