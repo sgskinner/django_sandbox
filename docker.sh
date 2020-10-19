@@ -41,7 +41,7 @@ function _usage() {
 #
 function _run() {
     docker run \
-        -d \
+        -it \
         -v "$PROJECT_DIR/app:/usr/src/app" \
         -p 0.0.0.0:80:8000 \
         --rm \
